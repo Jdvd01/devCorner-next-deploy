@@ -1,0 +1,82 @@
+.button {
+  display: grid;
+  place-items: center;
+  border: 0;
+  margin: 0;
+  border: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+}
+
+.button.sm {
+  font-size: var(--font-sm);
+  padding: 0.7rem 1.5rem;
+}
+
+.button.md {
+  font-size: var(--font-base);
+  padding: 0.7rem 1.8rem;
+}
+
+.button.lg {
+  font-size: var(--font-md);
+  padding: 0.8rem 2rem;
+}
+
+.button.primary {
+  background-color: var(--color-primary);
+  color: var(--font-color);
+}
+
+.button.secondary {
+  background-color: var(--color-secondary);
+  color: var(--font-color-contrast);
+}
+
+.button.secondary-dark {
+  background-color: var(--color-dark-purple);
+  color: var(--font-color);
+}
+
+.button.disabled {
+  background-color: var(--color-gray-300);
+  cursor: default;
+}
+
+.button.transparent {
+  background-color: transparent;
+  color: var(--color-black-900);
+}
+
+.button.rounded {
+  border-radius: 2.25rem;
+}
+
+.button.square {
+  border-radius: 0.4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .button.primary {
+    background-color: var(--color-primary);
+    color: var(--font-color-contrast);
+  }
+
+  .button.secondary {
+    background-color: var(--color-secondary);
+    color: var(--font-color);
+  }
+
+  /* Esto hay que cambiarlo luego */
+  .button.secondary-dark {
+    background-color: var(--color-primary);
+    color: var(--font-color-contrast);
+  }
+
+  .button.disabled {
+    background-color: var(--color-gray-300);
+    cursor: default;
+  }
+}
