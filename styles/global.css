@@ -1,0 +1,51 @@
+@import './variables.css';
+@import './fonts.css';
+@import './responsive.css';
+@import './spacing.css';
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-dark {
+  background-color: var(--color-main-dark);
+}
+.bg-light {
+  background-color: var(--color-main-light);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-dark {
+  color: var(--color-main-dark);
+}
+.color-light {
+  color: var(--color-main-light);
+}
+.color-dark-green {
+  color: var(--color-dark-green);
+}
+.padding-x {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+.padding-y {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+@media only screen and (min-width: 720px) {
+  .padding-x {
+    padding-right: 3.125rem;
+    padding-left: 3.125rem;
+  }
+  .padding-y {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
