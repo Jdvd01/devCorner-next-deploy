@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import '@/styles/global.css'
-import Footer from '@/components/footer'
-import Navbar from '@/components/navbar'
+import Footer from '@/common/layout/footer'
+import Navbar from '@/common/layout/navbar'
 
 export const metadata: Metadata = {
   title: 'DevCorner',
