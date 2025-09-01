@@ -1,0 +1,16 @@
+.app_main_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+.app_container {
+  position: relative;
+  min-width: var(--responsive-min-device);
+  width: 100%;
+  max-width: var(--responsive-max-device);
+}
+.app_container.padding {
+  padding: var(--app-padding);
+}
