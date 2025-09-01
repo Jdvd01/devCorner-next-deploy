@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@/styles/global.css'
 import Footer from '@/components/footer'
+import Navbar from '@/components/navbar'
 
 export const metadata: Metadata = {
   title: 'DevCorner',
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
+        <Navbar />
         {children}
         <Footer />
       </body>
