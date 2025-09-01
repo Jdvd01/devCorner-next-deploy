@@ -10,7 +10,7 @@ type PropsType = {
   padding?: boolean
 }
 
-const AppContainer = ({
+export const AppContainer = ({
   bgColor = BG_STYLES_CLASSES.LIGHT,
   elementType = 'main',
   className = '',
@@ -28,5 +28,3 @@ const AppContainer = ({
   )
   return <div className={`${styles.app_main_box} ${bgColor}`}>{element}</div>
 }
-
-export default AppContainer

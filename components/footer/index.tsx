@@ -1,5 +1,5 @@
 import { BG_STYLES_CLASSES } from '@/common/utils/enums'
-import AppContainer from '@/common/layout/AppContainer'
+import { AppContainer } from '@/common/layout/AppContainer'
 import styles from './footer.module.css'
 import FooterLinks from './components/FooterLinks'
 import FooterForm from './components/FooterForm'
