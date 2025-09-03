@@ -14,7 +14,7 @@ export default function Footer() {
             <span className={`${styles['footer__logo']}`}>DevCorner</span>
             <FooterLinks arrayOfLinks={footerTopLinks} />
           </div>
-          <NewsletterForm />
+          <NewsletterForm footerForm={true} />
         </div>
 
         <hr className={`${styles['footer__line']}`} />

@@ -2,13 +2,17 @@
 
 import styles from './Form.module.css'
 import { Button } from '@/common/components/Button'
-import { useNewsletter } from '@/api/hooks/newsletter'
+import { useNewsletter } from '@/hooks/newsletter'
 import { CircleCheck } from '@/common/icons/CircleCheck'
 import { CircleErrorDisclaimer } from '@/common/icons/CircleErrorDisclaimer'
 import { Modal } from '@/common/components/Modal'
 import { redirect, RedirectType } from 'next/navigation'
 
-export function NewsletterForm() {
+interface Props {
+  footerForm?: boolean
+}
+
+export function NewsletterForm({ footerForm = false }: Props) {
   const {
     handleChange,
     handleSubmit,
@@ -37,12 +41,15 @@ export function NewsletterForm() {
         content={modalContent.content}
       />
 
-      <form onSubmit={handleSubmit} className={`${styles.form_container}`}>
+      <form
+        onSubmit={handleSubmit}
+        className={`${footerForm ? styles.form_container__footer : styles.form_container__hero}`}
+      >
         <input
           type='text'
           name='email'
           placeholder='Email'
-          className={`${styles.form_input}`}
+          className={`${footerForm ? styles.form_input__footer : styles.form_input__hero}`}
           aria-labelledby='Email'
           value={data.email}
           onChange={handleChange}
