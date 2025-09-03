@@ -1,8 +1,10 @@
+'use client'
+
 import styles from './Form.module.css'
 import { Button } from '@/common/components/Button'
 // import { useNewsletter } from '../../Footer.hooks'
 
-const FooterForm = () => {
+export default function FooterForm() {
   // const { handleChange, handleSubmit, data } = useNewsletter()
 
   return (
@@ -30,5 +32,3 @@ const FooterForm = () => {
     </form>
   )
 }
-
-export default FooterForm
