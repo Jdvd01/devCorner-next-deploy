@@ -4,3 +4,7 @@ export const verifyEmail = (email: string): boolean => {
 
   return emailRegex.test(email)
 }
+
+export const isEmpty = (email: string): boolean => {
+  return email.trim() === '' ? true : false
+}
