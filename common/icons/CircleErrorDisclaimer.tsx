@@ -3,7 +3,7 @@ interface CircleErrorDisclaimerProps {
   width?: number
   height?: number
 }
-const CircleErrorDisclaimer: React.FC<CircleErrorDisclaimerProps> = ({
+export const CircleErrorDisclaimer: React.FC<CircleErrorDisclaimerProps> = ({
   color = '#22C55E',
   width = '24',
   height = '24',
@@ -30,5 +30,3 @@ const CircleErrorDisclaimer: React.FC<CircleErrorDisclaimerProps> = ({
     </svg>
   )
 }
-
-export default CircleErrorDisclaimer

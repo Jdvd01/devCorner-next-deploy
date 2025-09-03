@@ -3,7 +3,8 @@ interface CircleCheckProps {
   width?: number
   height?: number
 }
-const CircleCheck: React.FC<CircleCheckProps> = ({
+
+export const CircleCheck: React.FC<CircleCheckProps> = ({
   color = '#22C55E',
   width = '24',
   height = '24',
@@ -20,5 +21,3 @@ const CircleCheck: React.FC<CircleCheckProps> = ({
     </svg>
   )
 }
-
-export default CircleCheck
