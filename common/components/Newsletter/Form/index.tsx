@@ -4,19 +4,19 @@ import styles from './Form.module.css'
 import { Button } from '@/common/components/Button'
 // import { useNewsletter } from '../../Footer.hooks'
 
-export default function FooterForm() {
+export function NewsletterForm() {
   // const { handleChange, handleSubmit, data } = useNewsletter()
 
   return (
     <form
       // onSubmit={handleSubmit}
-      className={`${styles.top_section_right}`}
+      className={`${styles.form_container}`}
     >
       <input
         type='text'
         name='email'
         placeholder='Email'
-        className={`${styles.input}`}
+        className={`${styles.form_input}`}
         aria-labelledby='Email'
         // value={data.email}
         // onChange={handleChange}

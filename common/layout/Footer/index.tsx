@@ -2,8 +2,8 @@ import { BG_STYLES_CLASSES } from '@/common/utils/enums'
 import { AppContainer } from '@/common/layout/AppContainer'
 import styles from './footer.module.css'
 import FooterLinks from './components/FooterLinks'
-import FooterForm from './components/FooterForm'
 import { footerBottomLinks, footerTopLinks } from './data'
+import { NewsletterForm } from '@/common/components/Newsletter/Form'
 
 export default function Footer() {
   return (
@@ -14,7 +14,7 @@ export default function Footer() {
             <span className={`${styles['footer__logo']}`}>DevCorner</span>
             <FooterLinks arrayOfLinks={footerTopLinks} />
           </div>
-          <FooterForm />
+          <NewsletterForm />
         </div>
 
         <hr className={`${styles['footer__line']}`} />
