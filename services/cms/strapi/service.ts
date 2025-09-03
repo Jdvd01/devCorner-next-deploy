@@ -22,7 +22,7 @@ import { Newsletter, NewsletterAttributes } from './types/newsletter'
 import { metaDataAdapter } from './adapters/metaDataAdapter'
 import { env } from '@/envConfig'
 
-const CMS_TOKEN = env.CMS_TOKEN ?? 'Error al extraer el token'
+const CMS_TOKEN = env.NEXT_PUBLIC_CMS_TOKEN ?? 'Error al extraer el token'
 
 export class StrapiCmsService implements CmsBlogService {
   readonly client: HttpClient
@@ -211,7 +211,7 @@ export class StrapiCmsService implements CmsBlogService {
 }
 
 const strapiHttpClient = new HttpClient({
-  url: env.APP_CMS_URL ?? 'localhost:1337/api',
+  url: env.NEXT_PUBLIC_APP_CMS_URL ?? 'localhost:1337/api',
   methods: ['GET'],
   serviceName: 'StrapiHttpClient',
 })

@@ -1,6 +1,6 @@
 export const env = {
-  APP_TITLE: process.env.APP_TITLE,
-  NODE_ENV: process.env.NODE_ENV,
-  CMS_TOKEN: process.env.CMS_TOKEN,
-  APP_CMS_URL: process.env.APP_CMS_URL,
+  NEXT_PUBLIC_APP_TITLE: process.env.NEXT_PUBLIC_APP_TITLE,
+  NEXT_PUBLIC_NODE_ENV: process.env.NEXT_PUBLIC_NODE_ENV,
+  NEXT_PUBLIC_CMS_TOKEN: process.env.NEXT_PUBLIC_CMS_TOKEN,
+  NEXT_PUBLIC_APP_CMS_URL: process.env.NEXT_PUBLIC_APP_CMS_URL,
 }
