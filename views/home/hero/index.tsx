@@ -1,8 +1,7 @@
 import styles from './Hero.module.css'
 import { Chip } from '@/common/components/Chip'
+import { MaskedIcon } from '@/common/components/Icon'
 import { NewsletterForm } from '@/common/components/Newsletter/Form'
-
-import { ArrowDownIcon } from '@/common/icons/ArrowDown'
 
 export const Hero = () => {
   return (
@@ -52,12 +51,13 @@ export const Hero = () => {
           </div>
 
           <div className={`${styles.hero_bottom}`}>
-            <ArrowDownIcon
-              width={30}
-              height={30}
+            <MaskedIcon
+              customSrc='https://img.devcorner.top/icons/arrow.svg'
               color='#8971fe'
-              className={styles.arrow}
+              size={35}
+              customClass={styles.arrow}
             />
+
             <h2 className={`${styles.hero_footer}`}>Explore Categories</h2>
           </div>
         </div>
