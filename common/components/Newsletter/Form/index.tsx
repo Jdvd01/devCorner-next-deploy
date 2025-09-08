@@ -2,7 +2,7 @@
 
 import styles from './Form.module.css'
 import { Button } from '@/common/components/Button'
-import { useNewsletter } from '@/hooks/newsletter'
+import { useNewsletter } from '@/common/hooks/newsletter'
 import { CircleCheck } from '@/common/icons/CircleCheck'
 import { CircleErrorDisclaimer } from '@/common/icons/CircleErrorDisclaimer'
 import { Modal } from '@/common/components/Modal'

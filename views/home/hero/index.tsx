@@ -4,7 +4,7 @@ import { NewsletterForm } from '@/common/components/Newsletter/Form'
 
 import { ArrowDownIcon } from '@/common/icons/ArrowDown'
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div id='hero-cta' className={`${styles.hero_container}`}>
       <img
@@ -65,5 +65,3 @@ const Hero = () => {
     </div>
   )
 }
-
-export default Hero
