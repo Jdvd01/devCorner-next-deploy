@@ -51,6 +51,7 @@ export default function Navbar() {
               variant='secondary-dark'
               proportion={'md'}
               onClick={useButtonHandler()}
+              rounded={true}
             >
               Newsletter
             </Button>
