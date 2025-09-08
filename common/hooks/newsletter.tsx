@@ -14,13 +14,13 @@ import {
 } from '@/services/cms/strapi/types/newsletter'
 import React, { useState } from 'react'
 
-const initialModalInfo = {
+const initialModalInfo: ModalInfoInterface = {
   open: false,
   isRequestSuccess: false,
 }
 
-const initialModalContent = {
-  icon: '',
+const initialModalContent: ModalContentInterface = {
+  status: 'error',
   content: '',
 }
 
@@ -43,7 +43,7 @@ export function useNewsletter() {
     })
 
     setModalContent({
-      icon: requestInfo.success ? 'CircleCheck' : 'CircleErrorDisclaimer',
+      status: requestInfo.success ? 'success' : 'error',
       content:
         requestInfo.success ?
           `Welcome to our newsletter, feel free to navigate through our blogs. \nWe are happy you are here!`

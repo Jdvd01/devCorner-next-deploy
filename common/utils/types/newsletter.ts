@@ -1,6 +1,6 @@
 export interface ModalContentInterface {
   content: string
-  icon: string
+  status: 'success' | 'error'
 }
 
 export interface ModalInfoInterface {

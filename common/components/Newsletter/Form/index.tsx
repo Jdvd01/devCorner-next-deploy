@@ -3,10 +3,9 @@
 import styles from './Form.module.css'
 import { Button } from '@/common/components/Button'
 import { useNewsletter } from '@/common/hooks/newsletter'
-import { CircleCheck } from '@/common/icons/CircleCheck'
-import { CircleErrorDisclaimer } from '@/common/icons/CircleErrorDisclaimer'
 import { Modal } from '@/common/components/Modal'
 import { redirect, RedirectType } from 'next/navigation'
+import { MaskedIcon } from '@/common/components/Icon'
 
 interface Props {
   footerForm?: boolean
@@ -23,9 +22,17 @@ export function NewsletterForm({ footerForm = false }: Props) {
   } = useNewsletter()
 
   const icon =
-    modalContent.icon === 'CircleCheck' ?
-      <CircleCheck width={60} height={60} />
-    : <CircleErrorDisclaimer width={60} height={60} color='#df2b28' />
+    modalContent.status === 'success' ?
+      <MaskedIcon
+        size={60}
+        customSrc='https://img.devcorner.top/icons/circle-check.svg'
+        color='#22C55E'
+      />
+    : <MaskedIcon
+        size={60}
+        customSrc='https://img.devcorner.top/icons/circle-error.svg'
+        color='#df2b28'
+      />
 
   return (
     <>
