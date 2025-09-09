@@ -32,7 +32,6 @@ export const CardInfo: React.FC<CardInfoProps> = ({
             target='_blank'
             aria-label={`Github of ${name}`}
           >
-            {/* <GithubIcon color='white' width='40' height='40' /> */}
             <MaskedIcon
               size={40}
               color='#FFFFFF'
@@ -47,7 +46,6 @@ export const CardInfo: React.FC<CardInfoProps> = ({
             target='_blank'
             aria-label={`Linkedin of ${name}`}
           >
-            {/* <LinkedInIcon color='white' width='40' height='40' /> */}
             <MaskedIcon
               size={40}
               color='#FFFFFF'
@@ -63,7 +61,6 @@ export const CardInfo: React.FC<CardInfoProps> = ({
             target='_blank'
             aria-label={`Portfolio of ${name}`}
           >
-            {/* <BrowserIcon color='white' width='40' height='40' /> */}
             <MaskedIcon
               size={40}
               color='#FFFFFF'
