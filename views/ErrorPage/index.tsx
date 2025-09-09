@@ -1,12 +1,17 @@
-import styles from './ErrorPage.module.css'
 import { Chip } from '@/common/components/Chip'
+import { MaskedIcon } from '@/common/components/Icon'
+import styles from './ErrorPage.module.css'
 import Link from 'next/link'
 
 export const ErrorPage = () => {
   return (
     <div className={`${styles.errorViewContainer}`}>
       <div className={`${styles.dotsTopDeco}`}>
-        {/* <img src={dots} alt='dots' width={'150'} height={'110'} /> */}
+        <MaskedIcon
+          color='#2AD167'
+          size={150}
+          customSrc='https://img.devcorner.top/patterns/square-pattern.svg'
+        />
       </div>
       <div className={`${styles.leftSide}`}>
         <picture>
@@ -42,9 +47,9 @@ export const ErrorPage = () => {
             <Link href='/' className={`${styles.leftButton}`}>
               Go back to homepage
             </Link>
-            {/* <Link href={location.href} className={`${styles.rightButton}`}>
-              Try again
-            </Link> */}
+            <Link href='/blog' className={`${styles.rightButton}`}>
+              Go to blogs
+            </Link>
           </div>
         </div>
       </div>
@@ -56,6 +61,12 @@ export const ErrorPage = () => {
           height={'110'}
           className={`${styles.bottom}`}
         /> */}
+        <MaskedIcon
+          color='#2AD167'
+          size={150}
+          customSrc='https://img.devcorner.top/patterns/square-pattern.svg'
+          customClass={`${styles.bottom}`}
+        />
       </div>
     </div>
   )

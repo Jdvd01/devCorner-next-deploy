@@ -17,14 +17,15 @@
   grid-area: dotTop;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .dotsBottomDeco {
   grid-area: dotBtm;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .leftSide {
