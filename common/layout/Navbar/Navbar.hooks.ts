@@ -1,5 +1,4 @@
 import { redirect, RedirectType } from 'next/navigation'
-import React from 'react'
 
 export const useButtonHandler = (): ((
   event: React.MouseEvent<HTMLButtonElement>

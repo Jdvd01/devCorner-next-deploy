@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   MetaData as IMetaData,
   OpenGraph,
@@ -17,7 +16,7 @@ export const MetaData: React.FC<MetaDataProps> = ({
   tw,
 }: MetaDataProps) => {
   return (
-    <React.Fragment>
+    <>
       <meta charSet='utf-8' />
       {meta.title && <title>{meta.title}</title>}
       {meta.description && (
@@ -48,6 +47,6 @@ export const MetaData: React.FC<MetaDataProps> = ({
       {tw.site && <meta property='twitter:site' content={tw.site} />}
       {tw.siteId && <meta property='twitter:site:id' content={tw.siteId} />}
       {tw.creator && <meta property='twitter:creator' content={tw.creator} />}
-    </React.Fragment>
+    </>
   )
 }
