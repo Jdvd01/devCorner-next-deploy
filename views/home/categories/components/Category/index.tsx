@@ -1,6 +1,5 @@
 import { MaskedIcon } from '@/common/components/Icon'
 import styles from './Category.module.css'
-import React from 'react'
 
 interface CategoryProps {
   icon: string
