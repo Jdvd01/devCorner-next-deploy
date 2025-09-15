@@ -16,6 +16,7 @@ import markdown from 'react-syntax-highlighter/dist/esm/languages/prism/markdown
 import yaml from 'react-syntax-highlighter/dist/esm/languages/prism/yaml'
 import python from 'react-syntax-highlighter/dist/esm/languages/prism/python'
 import csharp from 'react-syntax-highlighter/dist/esm/languages/prism/csharp'
+import sql from 'react-syntax-highlighter/dist/esm/languages/prism/sql'
 
 // Register only the languages you need
 SyntaxHighlighter.registerLanguage('jsx', jsx)
@@ -28,6 +29,7 @@ SyntaxHighlighter.registerLanguage('markdown', markdown)
 SyntaxHighlighter.registerLanguage('yaml', yaml)
 SyntaxHighlighter.registerLanguage('python', python)
 SyntaxHighlighter.registerLanguage('csharp', csharp)
+SyntaxHighlighter.registerLanguage('sql', sql)
 
 const CodeBlock: React.FC<CodeBlockProps> = ({ children, className }) => {
   const language = className ? className.replace(/lang-/, '') : 'javascript'
